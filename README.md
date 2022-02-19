@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/nidaismail/clipboard-landing-page/)
-- Live Site URL: [Vercel](https://clipboard-landing-page-black.vercel.app/)
+- Live Site URL: [Vercel](https://clipboard-landing-page-sand-theta.vercel.app/)
 
 ## My process
 
