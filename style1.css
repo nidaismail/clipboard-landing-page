@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Primary */
+  --strongCyan: #26baa4;
+  --lightBlue: #6173ff;
+  /* Neutral */
+  --darkGrayishBlue: hsl(210, 10%, 33%);
+  --grayishBlue: hsl(202, 11%, 66%);
+}
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+header,
+main,
+footer {
+  padding: 10px;
+  text-align: center;
+}
+header {
+  background: url("images/bg-header-mobile.png") no-repeat;
+  background-size: 500px
+}
+.logo-img {
+  padding-top: 4rem;
+  margin-bottom: 3rem;
+}
+.logo-img .logo {
+  max-width: 140px;
+}
+.hero-txt h1{
+  font-size: 2.5rem;
+  color: var(--darkGrayishBlue);
+
+}
+.hero-txt h2 {
+  font-size: 2rem;
+  color: var(--darkGrayishBlue);
+}
+.hero-txt p {
+  margin: 12px 2rem 30px;
+  font-size: 1.1rem;
+  color: var(--grayishBlue) !important;
+  line-height: 1.4;
+}
+.btns {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.btns .btn {
+  outline: none;
+  border: none;
+  border-radius: 1.3rem;
+  padding: 12px 16px;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: white;
+  cursor: pointer;
+  /* gap: 15px; */
+}
+.btn + .btn {
+  margin-top: 15px;
+}
+.iosBtn {
+  background-color: var(--strongCyan);
+}
+.macBtn {
+  background-color: var(--lightBlue);
+}
+main {
+  margin-top: 4rem;
+}
+.hero-txt h4, h5 {
+  margin: 1rem;
+  font-size: 1.3rem;
+  color: var(--darkGrayishBlue);
+}
+
+.section2 {
+  margin: 2rem 0;
+}
+.section2 img {
+  margin-bottom: 2rem;
+}
+.section3{
+  margin-top: 8rem;
+}
+.logos{
+  max-width: 50px;
+  width: 40px;
+  height: 40px;
+}
+.top-space{
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+.section4{
+  margin-top: 6rem;
+}
+.section4 .icons{
+  margin-top: 5rem;
+} 
+.section5{
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom:  5rem;  
+}
+.section5 ul{
+  list-style-type: none; 
+}
+.section5 .brand{
+  width: 120px;
+  height: 80px;
+}
+.section5 .brands .brand{
+  width: unset;
+  padding: 4rem 0;
+}
+.section6 .hero-txt{
+  padding-left:  2.5rem;
+}
+.section6{
+  margin-bottom: 5rem;
+}
+
+
+.lastsection .logo{
+  max-width: 60px;
+  margin-bottom: 1rem;
+}
+.lastsection .item{
+  padding-top: 2.3rem;
+}
+.lastsection .items a{
+  outline: none;
+  text-decoration: none;
+  color: var(--grayishBlue) !important;
+  /* font-weight: bold; */
+}
+.social-links .social-img{
+  max-width: 20px;
+}
+
+.lastsection .social-links {
+  display: flex;
+  justify-content: space-around ;
+  margin: 3rem 5rem 2rem 3rem;
+}
+.lastsection  ul{
+    list-style-type: none;
+}
+
+/* .lastsection .social ul{
+  max-width: 550px;
+  padding-left: 50px;
+} */
+ 
+
+
+@media screen and (min-width: 768px) {
+  header {
+    background: url("images/bg-header-desktop.png") no-repeat;
+  }
+  header .hero-txt {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .btn + .btn {
+    margin: 0 10px;
+  }
+  .btns {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .btns .btn {
+    padding: 10px 22px;
+  }
+  .section1 .hero-txt {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .section2 {
+    display: flex;
+    /* position: relative; */
+    margin: 0;
+    text-align: left;
+  }
+  .section2 img {
+    position: relative;
+    right: 6%;
+  }
+  .section2 .description {
+    padding-top: 2.8rem;
+  }
+  /* .section3 p{
+    padding: 3rem;
+
+  } */
+  .section4 .hero-txt h5{
+    font-size: 1.2rem;
+  }
+  .section4 .icons{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+  }
+  .space{
+    max-width: 390px;
+    margin: 0 20px;
+  }
+  
+  .section5 .brands{
+    display: flex;
+    justify-content: center;
+  }
+  .section5 .brands .brand{
+    padding: 4rem 2rem;
+  }
+  .lastsection{
+    display: flex;
+  }
+  .lastsection .logo{
+    
+    max-height: 60px;
+    margin: 4rem 6rem ;
+  }
+  .lastsection .items{
+    display: flex;
+    max-width: 600px;
+  }
+
+.lastsection .items .item{
+  margin: 3rem 2rem;
+}
+.lastsection .items .item a{
+  width: 100px;
+}
+/* .lastsection .social-links{
+  margin: 2rem; */
+  .social-links .social-img{
+    
+    margin: 4rem 1.5rem;
+  }
+
+
+}
+  
+
+
+
