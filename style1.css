@@ -95,6 +95,9 @@ main {
 .section3{
   margin-top: 8rem;
 }
+.section3 img{
+  width: 60%;
+}
 .logos{
   max-width: 50px;
   width: 40px;
@@ -171,6 +174,7 @@ main {
 @media screen and (min-width: 768px) {
   header {
     background: url("images/bg-header-desktop.png") no-repeat;
+    background-size: cover;
   }
   header .hero-txt {
     max-width: 800px;
